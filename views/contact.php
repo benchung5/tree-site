@@ -9,12 +9,13 @@
 						<div class="title-area">
 							<h1>Contact Nature With Us</h1>	
 						</div>
+						<p>The below map is a rough idea of our service area, covering Prince George, Pineview, Buckhorn, Redrock, Stoner, Woodpecker, down to Hixon. It's just an approximation so feel free to give us a call either way!</p>
 						<iframe src="https://www.google.com/maps/d/embed?mid=1R4HEbUlvqpoFmto7KERDn2qTv1g3JMo&ehbc=2E312F" width="100%" height="480"></iframe>
 					</div>
 					<div class="small-12 large-5 columns sidebar">
 		                <div class="icon-with-text phone">
 		                    <div class="icon"></div>
-		                    Call Us: 250-981-1324
+		                    Call us: 250-981-1324
 		                </div>
                         <div class="icon-with-text email">
                             <div class="icon"></div>

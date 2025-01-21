@@ -50,6 +50,9 @@ mixins
 
 @mixin info-section($text-side, $img-src, $text-img-src, $shade) {
   display: flex;
+  @if $shade == dark {
+    background-color: $bg-dark;
+   }
   .text-box {
    flex-basis: 50%;
    padding: 5em 4em 3em;
@@ -913,7 +916,7 @@ body[data-checkout] {
 #header {
   background: #2f2a33;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   .header-inner {
     display: flex;
     justify-content: space-between;
@@ -1172,6 +1175,7 @@ home page
   position: relative;
   overflow: hidden;
   max-height: 100vh;
+  background-color: #000;
 /*  background-image: url(../img/hero-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;*/
@@ -1189,6 +1193,7 @@ home page
     position: absolute;
     padding: 10em 2em 0; 
     top: 0;
+    z-index: 2;
   }
   .content-container {
     transform: translateX(7%);
@@ -2572,9 +2577,10 @@ internal loader
       height: 5rem;
       transform-origin: center center;
       .path {
+        stroke: #fff;
         stroke-dasharray: 1, 200;
         stroke-dashoffset: 0;
-        animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+        animation: dash 1.5s ease-in-out infinite;
         stroke-linecap: round;
         stroke-width: 3;
       }
@@ -2604,7 +2610,7 @@ internal loader
   }
 }
 
-@keyframes color {
+/*@keyframes color {
   100%,
   0% {
     stroke: $light-green;
@@ -2619,7 +2625,7 @@ internal loader
   90% {
     stroke: $light-green;
   }
-}
+}*/
 
 /* ==========================================================================
 loading button

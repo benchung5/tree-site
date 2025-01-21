@@ -6,7 +6,13 @@ $this->insert('featured', $view_data );
 <div class="home-page site-wrapper">
     <div class="content-wrapper">
         <section id="hero">
-            <video data-src="assets/media/hero-video.webm" src="assets/media/hero-video.webm" autoplay loop muted>
+<!--             <video data-src="assets/media/hero-video.webm" src="assets/media/hero-video.webm" class="responsive-video-poster" 
+                data-large="assets/img/hero-video-poster-lg.png"
+                data-small="assets/img/hero-video-poster-sml.png"
+            autoplay loop muted>        -->     
+            <video id="hero-video" data-src="assets/media/hero-video.webm" class="responsive-video-poster" autoplay loop muted>
+                <source src="assets/media/hero-video.webm" type="video/webm"/>
+                <source src="assets/media/hero-video.mp4" type="video/mp4"/>
             </video>
             <div class="row overlay">
                 <div class="small-12 xlarge-9 columns">

@@ -1,5 +1,6 @@
 import animation from './animation';
 import scroll from './scroll';
+import Loader from './parts/loader';
 
 export default function() {
 	//hero animation
@@ -45,4 +46,53 @@ export default function() {
 			buttonAnimationTwo.animate();
 		}
 	}
+
+
+	/* ==========================================================================
+	hero video
+	========================================================================== */
+
+	// responsive video poster (works but not being used) ---------------------
+
+	var responsiveVideos = [].slice.call(document.querySelectorAll('.responsive-video-poster'));
+
+	function responsiveVidPoster(size) {
+		if(responsiveVideos) {
+			for(var i = 0; i < responsiveVideos.length; i++) {
+				responsiveVideos[i].poster = responsiveVideos[i].dataset[size];
+			}
+		}
+	}
+
+	window.addEventListener('isMobile', (e) => {
+		if(e.detail.isInitialPageLoad) {
+			if(e.detail.isMobile) {
+				responsiveVidPoster('small');
+			} else {
+				responsiveVidPoster('large');
+			}
+		}
+	});
+
+	// loading spinner ---------------------
+
+	let loaderContainerEl = document.querySelector("#hero");
+	let videoEl = document.querySelector("#hero-video");
+
+	let loader = Loader.init({
+	  children: videoEl,
+	  minHeight: '20rem',
+	  size: '10rem',
+	  color: '#2d2c2f',
+	  zIndex: 1,
+	  backgroundColor: '#000',
+	  isInitialPageLoad: true,
+	});
+
+	loaderContainerEl.prepend(loader.el);
+
+	videoEl.onloadeddata = () => {
+		loader.isLoading(false);
+	}
+
 }
