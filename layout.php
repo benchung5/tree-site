@@ -22,15 +22,6 @@ use Lib\Meta;
     echo $page_description ?:  SITE_DESCRIPTION;  ?>">
   <meta name="author" content="Ben Chung">
    
-  <!-- Mobile app Tags -->
-<!--   <meta name="application-name" content="appname">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="App Title">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="msapplication-starturl" content="/">
-  <meta name="msapplication-navbutton-color" content="#e1306c"> -->
-
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@niagaratrees">
@@ -102,15 +93,15 @@ use Lib\Meta;
   <!-- Google Icons -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140991222-1"></script>
+  <!-- Google tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPQB694GPY">
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-140991222-1');
+    gtag('config', 'G-NPQB694GPY');
   </script>
 
   <?php 

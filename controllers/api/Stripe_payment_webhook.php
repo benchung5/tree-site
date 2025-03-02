@@ -174,7 +174,7 @@ class Stripe_payment_webhook extends Controller
           $email_body .= $transaction['postal_code'].'<br>'.
           $transaction['state'].'<br><br>';
 
-          $email_body .= "If you have any questions, please don't hesitate to contact us:<br>info@naturewithus.com<br>289-697-8873";
+          $email_body .= "If you have any questions, please don't hesitate to contact us:<br>info@naturewithus.com<br>250-981-1324";
 
           // Utils::dbug($paymentIntent);
           // Utils::dbug($metadata);
