@@ -19,8 +19,8 @@ class Config
 	public static function define_constants()
 	{
 		/*site title*/
-		define('SITE_TITLE', 'Prince George Tree Service | Nature With Us');
-		define('SITE_DESCRIPTION', 'Your local Prince George tree service. We provide tree removal, tree pruning, hedge trimming, planting, tree bracing, and risk assessment. Book your free estimate now.');
+		define('SITE_TITLE', 'Tree Service in Prince George  | Nature With Us');
+		define('SITE_DESCRIPTION', 'Your local tree service in Prince George . We provide tree removal, tree pruning, hedge trimming, planting, tree bracing, and risk assessment. Book your free estimate now.');
 
 		/*Security*/
 		define('SECRETE_KEY', 'test123');

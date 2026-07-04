@@ -39,8 +39,8 @@ use Lib\Utils;
 	        <div class="row eco-friendly-row main-row">
 	            <div class="small-12 large-7 columns left">
 	                <div>
-	                    <h3>Eco Friendly</h3>
-	                    <p>We provide sustainable, eco-friendly methods;
+	                    <h3>Nature Friendly</h3>
+	                    <p>We provide sustainable methods;
 						   avoiding the use of harsh chemicals, and using organic materials to maintain plant and ecosystem health. As a small company, electric tools are used where possible, mitigating our carbon footprint and noise pollution while working. We are working on a tree nursery and mulch yard in hopes of procucing local native trees for planting. Recycled materials are used to their fullest where possible for structures, propagation, etc.
 						 </p>
 						 <p>
